@@ -61,10 +61,12 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let storyboard = UIStoryboard(name: ScreenConstants.storyboardName, bundle: nil)
         guard let details = storyboard.instantiateViewController(withIdentifier: ScreenConstants.detailViewControllerIdentifier) as? DetailViewController else { return }
         let user = users[indexPath.row]
         details.user = user
+        details.navigationItem.title = user.name.first
         show(details, sender: nil)
     }
 }

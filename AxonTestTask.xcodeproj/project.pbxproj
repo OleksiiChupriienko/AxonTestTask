@@ -35,7 +35,7 @@
 		4C08E5782419ECF900ED6DEF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4C08E57D2419EE8200ED6DEF /* Decodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decodable+Extension.swift"; sourceTree = "<group>"; };
 		4C58B0682419FEE0004E6E9D /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		4C58B06C241A003D004E6E9D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = SOURCE_ROOT; };
+		4C58B06C241A003D004E6E9D /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserCell.swift; path = AxonTestTask/View/UserCell.swift; sourceTree = SOURCE_ROOT; };
 		4C58B06E241A05C0004E6E9D /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		4C58B070241A076A004E6E9D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +70,7 @@
 		4C08E5612419EB1300ED6DEF /* AxonTestTask */ = {
 			isa = PBXGroup;
 			children = (
-				4C58B06C241A003D004E6E9D /* UserCell.swift */,
+				4C58B072241A0C3F004E6E9D /* View */,
 				4C08E5822419EF3400ED6DEF /* Controller */,
 				4C08E57F2419EEDC00ED6DEF /* App */,
 				4C08E56B2419EB1300ED6DEF /* Assets.xcassets */,
@@ -78,7 +78,6 @@
 				4C08E5702419EB1300ED6DEF /* Info.plist */,
 				4C08E56D2419EB1300ED6DEF /* LaunchScreen.storyboard */,
 				4C08E5682419EB1300ED6DEF /* Main.storyboard */,
-				4C58B070241A076A004E6E9D /* DetailViewController.swift */,
 				4C08E57A2419ED1500ED6DEF /* Model */,
 				4C08E57B2419EE3900ED6DEF /* Service */,
 			);
@@ -123,9 +122,18 @@
 		4C08E5822419EF3400ED6DEF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4C58B070241A076A004E6E9D /* DetailViewController.swift */,
 				4C08E5662419EB1300ED6DEF /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		4C58B072241A0C3F004E6E9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4C58B06C241A003D004E6E9D /* UserCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -355,6 +363,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB34X4F327;
 				INFOPLIST_FILE = AxonTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +382,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = VB34X4F327;
 				INFOPLIST_FILE = AxonTestTask/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
